@@ -7,9 +7,9 @@ g.js is a javascript framework that solves several routine problems in the devel
 <script defer type="text/javascript" src="g.js"></script>
 ```
 
-# tips
+# Basic
 
-1) You need a controller to of g.js to manage content. ```<gjs-c> ... </gjs-c>```
+1) You need a controller manage gjs content: ```<gjs-c> (your content with g.js ...) </gjs-c>```
 2) ```G``` is the global variable of g.js
 
 ## Create dynamic model by HTML
@@ -19,8 +19,8 @@ g.js is a javascript framework that solves several routine problems in the devel
 g=welcomeModel
 ```
 
-When you add ```gjs-m=welcomeModel``` to an input you create and model with initial value of input (or null by default).
-The ```g=welcomeModel``` is like a "print", show de value of model.
+When you add ```gjs-m=welcomeModel``` to an input, you create a new model with initial value of input (or null by default).
+The ```g=welcomeModel``` is like a "print", show the value of our new model.
 
 Result:
 
