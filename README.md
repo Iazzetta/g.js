@@ -31,7 +31,7 @@ Result:
 Javascript:
 
 ```
-    let welcomeModel = new GjsModel({var:'welcomeModel', value:'Initial value'});
+let welcomeModel = new GjsModel({var:'welcomeModel', value:'Initial value'});
 ```
 
 HTML:
@@ -43,12 +43,12 @@ g=welcomeModel
 ## Manipulating existing Model by Javascript:
 
 ```
-    let welcomeModel = new GjsModel({var:'welcomeModel', value:'Initial value'});
-    welcomeModel.set("new value");
-    
-    or 
-    
-    G.Models("welcomeModel").set("new value");
+let welcomeModel = new GjsModel({var:'welcomeModel', value:'Initial value'});
+welcomeModel.set("new value");
+
+or 
+
+G.Models("welcomeModel").set("new value");
 ```
 
 # Examples
