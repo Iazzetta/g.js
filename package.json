@@ -1,0 +1,35 @@
+{
+  "name": "gjs",
+  "version": "1.0.0",
+  "description": "g.js is a javascript framework that solves several routine problems in the development of web apps.",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iazzetta/g.js.git"
+  },
+  "keywords": [
+    "g.js",
+    "javascript",
+    "framework"
+  ],
+  "author": "Guilherme Iazzetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iazzetta/g.js/issues"
+  },
+  "homepage": "https://github.com/Iazzetta/g.js#readme",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-terser": "^2.0.1",
+    "terser": "^5.6.0-beta"
+  }
+}

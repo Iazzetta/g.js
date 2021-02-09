@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script defer src="../dist/g.js"></script>
+    </head>
+    <body>
+        <h1>g.js</h1>
+        <p>examples from g.js</p>
+        <hr>
+        
+        <gjs-controller>
+            <p><strong>1) Manipulating model to update strings of an input</strong></p>
+            <input type="text" gjs-m="welcomeModel" value="That's the initial value!">
+            g=welcomeModel
+            <hr>
+            <p><strong>2) Manipulating variable by Javascript</strong></p>
+            g=animatedVariable
+            <button onclick="startAnimation()">Start</button>
+        </gjs-controller>
+        
+        <script>
+            let g_animatedVariable;
+            window.onload = function(){
+                g_animatedVariable = new GjsModel({var:'animatedVariable', value:'Initial value'});
+            }
+            let startAnimation = function(){
+                setInterval(function(){
+                    g_animatedVariable.set(new Date().toLocaleString())
+                }, 1000);
+            }
+        </script>
+        
+    </body>
+</html>
