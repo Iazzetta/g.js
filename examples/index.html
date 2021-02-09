@@ -10,7 +10,7 @@
         <p>examples from g.js</p>
         <hr>
         
-        <gjs-controller>
+        <gjs-c>
             <p><strong>1) Manipulating model to update strings of an input</strong></p>
             <input type="text" gjs-m="welcomeModel" value="That's the initial value!">
             g=welcomeModel
@@ -18,7 +18,7 @@
             <p><strong>2) Manipulating variable by Javascript</strong></p>
             g=animatedVariable
             <button onclick="startAnimation()">Start</button>
-        </gjs-controller>
+        </gjs-c>
         
         <script>
             let g_animatedVariable;
@@ -28,6 +28,7 @@
             let startAnimation = function(){
                 setInterval(function(){
                     g_animatedVariable.set(new Date().toLocaleString())
+                    G.Models("welcomeModel").set(Math.random())
                 }, 1000);
             }
         </script>

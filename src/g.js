@@ -18,7 +18,7 @@ class GjsTaskManager {
             let task = this.list_tasks[i];
             new_dom = new_dom.replace('g=' + task.var, "<ginfo m=" + task.var + ">" + task.value + "</ginfo>");
         }
-        document.querySelector('gjs-controller').innerHTML = new_dom;
+        document.querySelector('gjs-c').innerHTML = new_dom;
     }
     
     add(model) {
@@ -75,7 +75,7 @@ class GjsTaskManager {
 class Gjs {
     constructor(callback){
         this.models = [];
-        this.edom = document.querySelector('gjs-controller').innerHTML;
+        this.edom = document.querySelector('gjs-c').innerHTML;
         GTask = new GjsTaskManager(this.edom);
         this.init();
     }
